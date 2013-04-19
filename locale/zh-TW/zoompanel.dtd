@@ -1,0 +1,10 @@
+<!ENTITY zoompanel.name "快速縮放">
+<!ENTITY zoompanel.tooltiptext "點擊打開縮放面板">
+<!ENTITY zoompanel.zoomin "放大">
+<!ENTITY zoompanel.zoomout "縮小">
+<!ENTITY zoompanel.reset "恢復正常大小">
+
+<!ENTITY zoompanel.zoomin.label "縮小網頁">
+<!ENTITY zoompanel.zoomout.label "放大網頁">
+<!ENTITY zoompanel.zoom.original.label "(原始大小)">
+<!ENTITY zoompanel.global.label "縮放比例適用於所有頁面">

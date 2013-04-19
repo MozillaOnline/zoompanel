@@ -1,0 +1,10 @@
+<!ENTITY zoompanel.name "Zoom Panel">
+<!ENTITY zoompanel.tooltiptext "Click to popup zoom panel">
+<!ENTITY zoompanel.zoomin "Zoom In">
+<!ENTITY zoompanel.zoomout "Zoom Out">
+<!ENTITY zoompanel.reset "Reset">
+
+<!ENTITY zoompanel.zoomin.label "Zoom In">
+<!ENTITY zoompanel.zoomout.label "Zoom Out">
+<!ENTITY zoompanel.zoom.original.label "(original)">
+<!ENTITY zoompanel.global.label "Apply to All Windows">

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<?xml-stylesheet href="chrome://zoompanel/skin/zoompanel.css" type="text/css"?>
+ 
+<!DOCTYPE window [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >
+%browserDTD;
+<!ENTITY % zoompanelDTD SYSTEM "chrome://zoompanel/locale/zoompanel.dtd">
+%zoompanelDTD;
+]>
+
+<overlay id="zoompanelOverlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+  
+  <script type="application/x-javascript" src="chrome://zoompanel/content/zoompanel.js" />
+  
+
+  
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="tczoompanel" label="&zoompanel.name;" type="button" tooltiptext="&zoompanel.name;" 
+                   class="toolbarbutton-1 toolbarbutton-ce" >
+    </toolbarbutton>
+  </toolbarpalette>
+  <popupset id="mainPopupSet">
+      <menupopup id="tczoompanel_Popup" onpopupshowing="ceZoomPanel.onpopupshowing();">
+        <menuitem id="tczoompanel_zoom_in" label="&zoompanel.zoomin.label;" 
+                  key="key_fullZoomReduce"
+                  oncommand="ceZoomPanel.reduce();" />
+        <menuitem id="tczoompanel_zoom_out" label="&zoompanel.zoomout.label;" 
+                  key="key_fullZoomEnlarge"
+                  oncommand="ceZoomPanel.enlarge();" />
+        <menuseparator/>
+        <menuitem id="tczoompanel_zoom_50" label="50%" oncommand="ceZoomPanel.zoomTo(0.5);" type="radio" group="tczoompanel"/>
+        <menuitem id="tczoompanel_zoom_75" label="75%" oncommand="ceZoomPanel.zoomTo(0.75);" type="radio" group="tczoompanel"/>
+        <menuitem id="tczoompanel_zoom_100" label="100% &zoompanel.zoom.original.label;"  type="radio" group="tczoompanel"
+                  key="key_fullZoomReset"
+                  oncommand="ceZoomPanel.reset();" />
+        <menuitem id="tczoompanel_zoom_125" label="125%" oncommand="ceZoomPanel.zoomTo(1.25);" type="radio" group="tczoompanel"/>
+        <menuitem id="tczoompanel_zoom_150" label="150%" oncommand="ceZoomPanel.zoomTo(1.50);" type="radio" group="tczoompanel"/>
+        <menuitem id="tczoompanel_zoom_200" label="200%" oncommand="ceZoomPanel.zoomTo(2);" type="radio" group="tczoompanel"/>
+        <menuitem id="tczoompanel_zoom_300" label="300%" oncommand="ceZoomPanel.zoomTo(3);" type="radio" group="tczoompanel"/>
+        <menuseparator/>
+        <menuitem id="tczoompanel_global" label="&zoompanel.global.label;" type="checkbox" oncommand="ceZoomPanel.switchGlobal();" />
+      </menupopup>
+  </popupset>
+  
+</overlay>

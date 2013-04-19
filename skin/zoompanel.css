@@ -1,0 +1,19 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+#tczoompanel {
+  list-style-image: url("chrome://zoompanel/skin/ce-Toolbar.png") !important;
+}
+#tczoompanel:-moz-lwtheme-brighttext {
+  list-style-image: url("chrome://zoompanel/skin/ce-Toolbar-inverted.png") !important;
+}
+
+#TabsToolbar:last-child :-moz-any(#tczoompanel) {
+  list-style-image: url("chrome://zoompanel/skin/ce-Toolbar-inverted.png") !important;
+}
+
+#tczoompanel {
+  -moz-image-region: rect(0px, 179px, 18px, 161px) !important;
+  -moz-box-orient: horizontal !important;
+}

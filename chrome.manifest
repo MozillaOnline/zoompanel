@@ -1,0 +1,9 @@
+content zoompanel content/
+skin    zoompanel classic/1.0 skin/
+locale  zoompanel en-US locale/en-US/
+locale  zoompanel zh-CN locale/zh-CN/
+locale  zoompanel zh-TW locale/zh-TW/
+overlay chrome://browser/content/browser.xul            chrome://zoompanel/content/browser-overlay.xul
+style   chrome://global/content/customizeToolbar.xul    chrome://zoompanel/skin/zoompanel.css
+
+override  chrome://zoompanel/skin/ce-Toolbar.png         chrome://zoompanel/skin/ce-Toolbar-mac.png  os=Darwin
