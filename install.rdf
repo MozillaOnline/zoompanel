@@ -8,8 +8,8 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>zoompanel@mozillaonline.com</em:id>
-    <em:version>2.0.0</em:version>
-
+    <em:version>2.0.1</em:version>
+    <em:type>2</em:type>
     <em:name>Zoom Panel</em:name>
     <em:description>Quick zoom using the zoom panel on status bar.</em:description>
     <em:creator>Mozilla Online</em:creator>
@@ -25,7 +25,6 @@
         <em:homepageURL>http://www.firefox.com.cn/</em:homepageURL>
       </Description>
     </em:targetApplication>
-
     <em:updateURL>https://addons.myfirefox.com.tw/addons/zoompanel/update.rdf?version=%ITEM_VERSION%</em:updateURL>
 
     <em:localized>
