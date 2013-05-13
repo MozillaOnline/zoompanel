@@ -8,7 +8,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>zoompanel@mozillaonline.com</em:id>
-    <em:version>2.0.1</em:version>
+    <em:version>2.0.0.1</em:version>
     <em:type>2</em:type>
     <em:name>Zoom Panel</em:name>
     <em:description>Quick zoom using the zoom panel on status bar.</em:description>
