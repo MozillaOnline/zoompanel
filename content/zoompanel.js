@@ -44,7 +44,7 @@ if (typeof ceZoomPanel == "undefined") {
     onLocationChange: function ZoomPanel__onLocationChange(aURI, aIsTabSwitch, aBrowser) {
       let browser = aBrowser || gBrowser.selectedBrowser;
       var val = Application.prefs.getValue("extensions.zoompanel.global.value", 100) / 100;
-      FullZoom._applyPrefToSetting(val, browser);
+      FullZoom._applyPrefToSetting ? FullZoom._applyPrefToSetting(val, browser) : FullZoom._applyPrefToZoom(val, browser);
     },
 
     switchGlobal: function ZoomPanel__switchGlobal() {
@@ -113,7 +113,7 @@ if (typeof ceZoomPanel == "undefined") {
 
     zoomTo: function ZoomPanel__zoomTo(val) {
       ZoomManager.zoom = val;
-      FullZoom._applySettingToPref();
+    FullZoom._applySettingToPref ? FullZoom._applySettingToPref() : FullZoom._applyZoomToPref(gBrowser.selectedBrowser);
     },
 
     installButton: function ZoomPanel__installButton(buttonId,toolbarId) {
